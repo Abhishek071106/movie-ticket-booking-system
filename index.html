@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Movie Ticket Booking</h1>
+
+        <div id="movie-container">
+            <h2>Select a Movie:</h2>
+            <select id="movie-select" onchange="loadSeats()">
+                <option value="">-- Select Movie --</option>
+                <option value="Avengers">Avengers</option>
+                <option value="Inception">Inception</option>
+                <option value="Spider-Man">Spider-Man</option>
+            </select>
+        </div>
+
+        <div id="seat-container">
+            <h2>Available Seats:</h2>
+            <div id="seats"></div>
+            <button id="book-btn" onclick="bookSeat()">Book Selected Seat</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
